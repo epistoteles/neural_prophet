@@ -391,9 +391,9 @@ class NeuralProphet:
         Note: regularization and mode (additive/multiplicative) are set in the main init.
 
         Args:
-            name: string name of the seasonality component.
-            period: float number of days in one period.
-            fourier_order: int number of Fourier components to use.
+            name (string): name of the seasonality component.
+            period (float): number of days in one period.
+            fourier_order (int): number of Fourier components to use.
             
         Returns:
             The NeuralProphet object.
@@ -584,9 +584,9 @@ class NeuralProphet:
             df (pd.DataFrame): data
             freq (str):Data step sizes. Frequency of data recording,
                 Any valid frequency for pd.date_range, such as '5min', 'D', 'MS' or 'auto' (default) to automatically set frequency.
-            k: number of CV folds
-            fold_pct: percentage of overall samples to be in each fold
-            fold_overlap_pct: percentage of overlap between the validation folds.
+            k (int): number of CV folds
+            fold_pct (float): percentage of overall samples to be in each fold
+            fold_overlap_pct (float): percentage of overlap between the validation folds.
 
         Returns:
             list of k tuples [(df_train, df_val), ...] where:
